@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Login</title>
-    </head>
-    <body>
+
+<head>
+    <?php include "head.php" ?>
+</head>
+
+<body>
+
+    <?php include "header2.php" ?>
 
         <?php
         if (isset($_POST['logar'])) {
@@ -29,15 +32,30 @@
             }
         }
         ?>
-        
-        <form action="#" method="post" autocomplete="off" >
-            <label for="login">Login</label>
-            <input type="text" id="login" name="usuario" maxlength="20" autofocus /><br/>
-            <label for="senha1">Senha</label>
-            <input type="password" id="senha1" name="senha" maxlength="20"/><br/>
 
-            <input type="submit" name="logar" value="Login"/>
-        </form>
+        <div class="container my-4" align="center">
+            <img src="img/tool.png" height="250px;" style="">
+        </div>
 
-    </body>
+            <!-- form login -->
+            <form class="text-center border border-light p-4 container" style="width:500px;margin-top:80px;margin-bottom:80px;">
+
+                <p class="h4 mb-4">login</p>
+
+                <!-- usuário -->
+                <input type="usuario" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Usuário">
+
+                <!-- senha -->
+                <input type="senha" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Senha">
+
+                <!-- Entrar button -->
+                <button class="btn btn-pink my-4" type="button">Entrar</button>
+
+            </form>
+            <!-- form login -->
+
+            <?php include "footer.php" ?>
+
+</body>
+
 </html>

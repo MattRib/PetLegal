@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 03-Ago-2018 às 02:32
+-- Generation Time: 08-Ago-2018 às 02:36
 -- Versão do servidor: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -54,16 +54,29 @@ INSERT INTO `admin` (`id_admin`, `usuario`, `senha`, `status`) VALUES
 
 DROP TABLE IF EXISTS `artigo`;
 CREATE TABLE IF NOT EXISTS `artigo` (
-  `id_artigo` int(11) NOT NULL,
+  `id_artigo` int(11) NOT NULL AUTO_INCREMENT,
   `categoria` char(30) NOT NULL,
   `titulo` char(30) NOT NULL,
   `resumo` char(200) NOT NULL,
-  `data` date NOT NULL,
+  `data` datetime NOT NULL,
   `autor` char(50) NOT NULL,
-  `texto` longtext NOT NULL,
+  `conteudo` longtext NOT NULL,
   `status` enum('0','1') NOT NULL DEFAULT '1',
   PRIMARY KEY (`id_artigo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='informacoes para o admin inserir no site';
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COMMENT='informacoes para o admin inserir no site';
+
+--
+-- Extraindo dados da tabela `artigo`
+--
+
+INSERT INTO `artigo` (`id_artigo`, `categoria`, `titulo`, `resumo`, `data`, `autor`, `conteudo`, `status`) VALUES
+(1, 'fofinho', 'EHAREHE', 'ADBS', '2018-08-07 12:12:00', 'EWHWRHE', 'DSB', '1'),
+(2, 'EHRWHEJ', 'RWHERJH', 'WHRH', '2018-08-07 12:12:00', 'WEHWRH', 'EWGHWH', '1'),
+(3, 'reh', 'rherh', 'eghreh', '2018-08-07 12:12:00', 'rjtj', 'rhre', '1'),
+(4, 'reh', 'rherh', 'eghreh', '2018-08-07 12:12:00', 'rjtj', 'rhre', '1'),
+(5, 'wgeg', 'wgeg', 'wgeg', '2018-08-07 12:12:00', 'wgwg', 'wgqwg', '1'),
+(6, 'wgeg', 'wgeg', 'wgeg', '2018-08-07 12:12:00', 'wgwg', 'wgqwg', '1'),
+(7, 'wgeg', 'wgeg', 'wgeg', '2018-08-07 12:12:00', 'wgwg', 'wgqwg', '1');
 
 -- --------------------------------------------------------
 

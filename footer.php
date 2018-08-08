@@ -26,7 +26,7 @@
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!">Contato</a>
+                        <a href="contato.php">Contato</a>
                     </h6>
                 </div>
                 <!-- Grid column -->
@@ -49,29 +49,6 @@
             </div>
             <!-- Grid row-->
             <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
-
-            <!-- Grid row-->
-            <div class="row pb-3">
-
-                <!-- Grid column -->
-                <div class="col-md-12">
-
-                    <div class="mb-5 flex-center" style="padding: 0 50px 0 50px;">
-
-                        <!-- Facebook -->
-                        <a class="fb-ic">
-                            <i class="fa fa-facebook fa-lg white-text mr-4"> </i>
-                        </a>
-                        <!-- Twitter -->
-                        <a class="tw-ic">
-                            <i class="fa fa-twitter fa-lg white-text mr-4"> </i>
-                        </a>
-                        <!--Instagram-->
-                        <a class="ins-ic">
-                            <i class="fa fa-instagram fa-lg white-text mr-4"> </i>
-                        </a>
-
-                    </div>
 
                 </div>
                 <!-- Grid column -->

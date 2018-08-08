@@ -48,7 +48,7 @@
                         <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-outline-pink">More Info</a>
+                        <a href="#" class="btn btn-outline-pink btn-block">More Info</a>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                         <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-outline-pink">More Info</a>
+                        <a href="#" class="btn btn-outline-pink btn-block">More Info</a>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                         <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-outline-pink">More Info</a>
+                        <a href="#" class="btn btn-outline-pink btn-block">More Info</a>
                     </div>
                 </div>
             </div>
@@ -84,9 +84,7 @@
     </div>
     <!-- /.container -->
 
-    <footer>
-        <?php include "footer.php"; ?>
-    </footer>
+<?php include "footer.php" ?>
 
 </body>
 

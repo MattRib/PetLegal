@@ -1,4 +1,4 @@
-	.navbar-brand{
+		.navbar-brand{
 		text-transform: uppercase;
 		font-size: 25px;
 		font-weight: 400;
@@ -18,7 +18,7 @@
 
 	.jumbotron{
 		text-align: center;
-		height: 620px;
+		height: 600px;
 		background: url('../img/headerimg.jpg') no-repeat center; 
 		color: #fff;
 		background-size: cover;
@@ -78,6 +78,10 @@
 	@media only screen and (max-width: 900px){
 		.btn-primary , .btn-info , h3 , p, h6, .btn-deep-orange, .btn-pink,{
 			text-align: center;
-			
 		}
+
+		.btn-success{
+			width: 100%;
+			display: block;
+
 	}

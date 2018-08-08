@@ -10,18 +10,6 @@
         <?php include "header.php"; ?>
         </header>
 
-        <div class="container" style="margin-top: 80px;">
-            <ol class="breadcrumb pink lighten-3">
-                <li class="breadcrumb-item">
-                    <i class="fa fa-star-o mr-2 white-text" aria-hidden="true"></i>
-                    <a class="white-text" href="index.html">Home</a>
-                </li>
-                <li class="breadcrumb-item active">
-                    <i class="fa fa-star-o mx-2 white-text" aria-hidden="true"></i>Contato</li>
-            </ol>
-        </div>
-
-
         <!-- Section: Contact v.2 -->
         <section class="my-5 container">
             <!-- Section heading -->
@@ -81,7 +69,7 @@
                             <!-- Grid column -->
                             <div class="col-md-12">
                                 <div class="md-form">
-                                    <textarea id="contact-message" class="form-control md-textarea" name="text_contato" maxlength="360" placeholder="Max. 360 caractere." rows="3"></textarea>
+                                    <textarea id="contact-message" class="form-control md-textarea" name="text_contato" maxlength="360" placeholder="" rows="3"></textarea>
                                     <label for="contact-message">Sua Mensagem</label>
                                 </div>
                             </div>
@@ -99,7 +87,7 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" style="margin-top: 60px;">
                     <ul class="list-unstyled mb-0">
                         <li>
                             <i class="fa fa-phone fa-2x mt-4 blue-text animated tada"></i>
