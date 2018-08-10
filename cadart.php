@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8"/>
-        <title>Área do Admin</title>
-    </head>
+
+    <?php include "head.php" ?>
+
     <body>
+
+        <?php include "headeramin.php" ?>
+
         <?php
         if (isset($_POST['bcad'])) {
 
@@ -44,25 +46,26 @@
         }
         ?>
 
-        <form enctype="multipart/form-data" action="#" method="post">
-            <label for="foto">Selecione a imagem:</label>
+        <form style="margin-top: 20px;" class="form-group container" enctype="multipart/form-data" action="#" method="post">
+            <label class="h4 card-title" for="foto">Selecione a imagem:</label>
             <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
-            <input type="file" id="foto" name="foto" ><br>
-            <label for="categoria">Categoria:</label>
-            <input type="text" id="categoria" name="categoria" maxlength="30" placeholder="categoria"/><br>
-            <label for="titulo">Título:</label>
-            <input type="text" id="titulo" name="titulo" maxlength="30" placeholder="titulo"/><br>
-            <label for="data">Data de publicação:</label>
-            <input type="date" id="data" name="data">
-            <input type="time" name="temp"><br>
-            <label for="resumo">Resumo:</label><br>
-            <textarea maxlength="200" id="resumo" name="resumo" placeholder="resumo"></textarea><br>
-            <label for="autor">Autor:</label>
-            <input type="text" id="autor" name="autor" placeholder="autor" maxlength="50"/><br>
-            <label for="conteudo">Conteúdo:</label><br>
-            <textarea id="conteudo" name="conteudo" placeholder="conteudo"></textarea><br>
+            <input style="width: 400px" class="form-control" type="file" id="foto" name="foto" ><br>
+            <label class="h4 card-title" for="categoria">Categoria:</label>
+            <input style="width: 350px" class="form-control" type="text" id="categoria" name="categoria" maxlength="30" placeholder="categoria"/><br>
+            <label class="h4 card-title" for="titulo">Título:</label>
+            <input style="width: 350px" class="form-control" type="text" id="titulo" name="titulo" maxlength="30" placeholder="titulo"/><br>
+            <label class="h4 card-title" for="data">Data de publicação:</label>
+            <input style="width: 150px;" class="form-control" type="date" id="data" name="data">
+            <label style="margin-top: 20px;" class="h4 card-title" for="hora">Hora:</label>
+            <input style="width: 150px;" class="form-control" id="hora" type="time" name="temp"><br>
+            <label class="h4 card-title" for="resumo">Resumo:</label><br>
+            <textarea class="md-textarea form-control" maxlength="200" id="resumo" name="resumo" placeholder="resumo"></textarea><br>
+            <label class="h4 card-title" for="autor">Autor:</label>
+            <input style="width: 350px" class="form-control" type="text" id="autor" name="autor" placeholder="autor" maxlength="50"/><br>
+            <label class="h4 card-title" for="conteudo">Conteúdo:</label><br>
+            <textarea class="md-textarea form-control" id="conteudo" name="conteudo" placeholder="conteudo"></textarea><br>
 
-            <input type="submit" name="bcad" value="Cadastrar"/>
+            <input class="btn btn-info" type="submit" name="bcad" value="Cadastrar"/>
         </form> 
     </body>
 </html>

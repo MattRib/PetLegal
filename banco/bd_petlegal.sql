@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 08-Ago-2018 às 02:36
+-- Generation Time: 10-Ago-2018 às 02:29
 -- Versão do servidor: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -33,6 +33,7 @@ USE `bd_petlegal`;
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE IF NOT EXISTS `admin` (
   `id_admin` int(11) NOT NULL,
+  `nome` char(30) NOT NULL,
   `usuario` char(20) NOT NULL,
   `senha` char(20) NOT NULL,
   `status` enum('ativo','inativo') NOT NULL DEFAULT 'ativo',
@@ -43,8 +44,8 @@ CREATE TABLE IF NOT EXISTS `admin` (
 -- Extraindo dados da tabela `admin`
 --
 
-INSERT INTO `admin` (`id_admin`, `usuario`, `senha`, `status`) VALUES
-(0, '1234', '1234', 'ativo');
+INSERT INTO `admin` (`id_admin`, `nome`, `usuario`, `senha`, `status`) VALUES
+(0, 'Felipe', '1234', '1234', 'ativo');
 
 -- --------------------------------------------------------
 
@@ -55,6 +56,7 @@ INSERT INTO `admin` (`id_admin`, `usuario`, `senha`, `status`) VALUES
 DROP TABLE IF EXISTS `artigo`;
 CREATE TABLE IF NOT EXISTS `artigo` (
   `id_artigo` int(11) NOT NULL AUTO_INCREMENT,
+  `foto` char(255) NOT NULL,
   `categoria` char(30) NOT NULL,
   `titulo` char(30) NOT NULL,
   `resumo` char(200) NOT NULL,
@@ -63,20 +65,15 @@ CREATE TABLE IF NOT EXISTS `artigo` (
   `conteudo` longtext NOT NULL,
   `status` enum('0','1') NOT NULL DEFAULT '1',
   PRIMARY KEY (`id_artigo`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COMMENT='informacoes para o admin inserir no site';
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COMMENT='informacoes para o admin inserir no site';
 
 --
 -- Extraindo dados da tabela `artigo`
 --
 
-INSERT INTO `artigo` (`id_artigo`, `categoria`, `titulo`, `resumo`, `data`, `autor`, `conteudo`, `status`) VALUES
-(1, 'fofinho', 'EHAREHE', 'ADBS', '2018-08-07 12:12:00', 'EWHWRHE', 'DSB', '1'),
-(2, 'EHRWHEJ', 'RWHERJH', 'WHRH', '2018-08-07 12:12:00', 'WEHWRH', 'EWGHWH', '1'),
-(3, 'reh', 'rherh', 'eghreh', '2018-08-07 12:12:00', 'rjtj', 'rhre', '1'),
-(4, 'reh', 'rherh', 'eghreh', '2018-08-07 12:12:00', 'rjtj', 'rhre', '1'),
-(5, 'wgeg', 'wgeg', 'wgeg', '2018-08-07 12:12:00', 'wgwg', 'wgqwg', '1'),
-(6, 'wgeg', 'wgeg', 'wgeg', '2018-08-07 12:12:00', 'wgwg', 'wgqwg', '1'),
-(7, 'wgeg', 'wgeg', 'wgeg', '2018-08-07 12:12:00', 'wgwg', 'wgqwg', '1');
+INSERT INTO `artigo` (`id_artigo`, `foto`, `categoria`, `titulo`, `resumo`, `data`, `autor`, `conteudo`, `status`) VALUES
+(11, '15338542955b6cc25763bfa.jpg', 'Animal', 'Vida selvagem', 'Vida de animal Ã© o bicho!!!', '2018-08-09 00:00:00', 'Felipe GonÃ§alves', 'fayukhkgrgierÃ§ihrilhbr', '1'),
+(12, '15338545915b6cc37f35579.jpg', 'Flor', 'Flor', 'agrjtykuljgkfejkgkefgelgvoeighwoehiweguegkweguowgeulihgtglkgdugkegkrugr', '2018-08-09 00:00:00', 'Felipe GonÃ§alves', 'kljlgrwrglige', '1');
 
 -- --------------------------------------------------------
 
